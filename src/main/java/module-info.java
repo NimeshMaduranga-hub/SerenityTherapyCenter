@@ -3,7 +3,10 @@ module lk.ijse.serenity.serenitytherapycenter {
     requires javafx.fxml;
 
     requires com.dlsc.formsfx;
+    requires jakarta.persistence;
+    requires org.hibernate.orm.core;
 
     opens lk.ijse.serenity.serenitytherapycenter to javafx.fxml;
+    opens lk.ijse.serenity.serenitytherapycenter.controller to javafx.fxml;
     exports lk.ijse.serenity.serenitytherapycenter;
 }

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="491.0" prefWidth="1040.0" style="-fx-background-color: linear-gradient(to bottom right, #f5f7fa, #c3cfe2); -fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.LoginControllerForm">
+
+   <children>
+
+      <BorderPane style="-fx-background-color: white;                            -fx-background-radius: 20;                            -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 15, 0, 0, 5);" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+
+         <!-- LEFT SIDE -->
+         <left>
+            <VBox alignment="CENTER" prefHeight="451.0" prefWidth="674.0" spacing="20" style="-fx-background-radius: 20 0 0 20; -fx-background-color: #595942;">
+               <children>
+                  <Pane prefHeight="451.0" prefWidth="526.0">
+                     <children>
+                        <ImageView fitHeight="338.0" fitWidth="312.0" layoutX="70.0" layoutY="48.0">
+                           <image>
+                              <Image url="@assets/download.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#f8f8f8" layoutX="368.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serenity">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="76.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="376.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mental Health Center" wrappingWidth="273.4892578125">
+                           <font>
+                              <Font size="29.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="33.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Brain Can Change">
+                           <font>
+                              <Font name="Kristen ITC" size="37.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </left>
+
+         <!-- RIGHT SIDE -->
+         <right>
+            <VBox alignment="CENTER_LEFT" prefHeight="451.0" prefWidth="651.0" spacing="20" style="-fx-padding: 50; -fx-background-color: #deddc5;">
+
+               <children>
+
+                  <Label style="-fx-font-size: 30px;                                       -fx-font-weight: bold;                                       -fx-text-fill: #1e293b;" text="Login" />
+
+                  <TextField fx:id="txtUsername" maxWidth="350" prefHeight="45" promptText="Username" style="-fx-background-radius: 10;                                           -fx-font-size: 14px;" />
+
+                  <PasswordField fx:id="txtPassword" maxWidth="350" prefHeight="45" promptText="Password" style="-fx-background-radius: 10;                                               -fx-font-size: 14px;" />
+
+                  <Button fx:id="btnLogin" maxWidth="350" onAction="#btnLoginOnAction" prefHeight="45" style="-fx-background-color: #454426; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10;" text="Login" />
+
+               </children>
+
+               <padding>
+                  <Insets bottom="20" left="20" right="20" top="20" />
+               </padding>
+
+            </VBox>
+         </right>
+
+      </BorderPane>
+
+   </children>
+
+</AnchorPane>
