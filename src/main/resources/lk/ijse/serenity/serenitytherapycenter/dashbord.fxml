@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.Dashbordcontroller">
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #e2dec9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.Dashbordcontroller">
    <children>
       <VBox alignment="CENTER" layoutX="-4.0" layoutY="-6.0" prefHeight="705.0" prefWidth="256.0" spacing="10" style="-fx-background-color: #9a9778;">
          <children>
@@ -79,12 +79,12 @@
             <Pane prefHeight="92.0" prefWidth="256.0" />
          </children>
       </VBox>
-      <HBox alignment="CENTER_LEFT" layoutX="250.0" layoutY="-1.0" prefHeight="65.0" prefWidth="949.0" spacing="10" style="-fx-background-color: #9a9778;">
+      <HBox alignment="CENTER_LEFT" layoutX="250.0" layoutY="-1.0" prefHeight="65.0" prefWidth="1115.0" spacing="10" style="-fx-background-color: #9a9778;">
          <children>
             <Pane prefHeight="65.0" prefWidth="176.0" />
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="User : " wrappingWidth="90.91064453125">
                <font>
-                  <Font name="System Bold" size="25.0" />
+                  <Font name="Algerian" size="25.0" />
                </font>
             </Text>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="User" wrappingWidth="119.79443359375">
@@ -94,13 +94,13 @@
             </Text>
              <Region HBox.hgrow="ALWAYS" />
 
-             <Pane prefHeight="65.0" prefWidth="310.0" />
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " wrappingWidth="90.91064453125">
+             <Pane prefHeight="65.0" prefWidth="394.0" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " wrappingWidth="168.91064453125">
                <font>
-                  <Font name="System Bold" size="25.0" />
+                  <Font name="Algerian" size="25.0" />
                </font>
             </Text>
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="119.79443359375">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="171.79443359375">
                <font>
                   <Font size="25.0" />
                </font>
@@ -108,12 +108,65 @@
          </children>
       </HBox>
       <Line endX="-80.73330688476562" endY="29.999996185302734" layoutX="447.0" layoutY="20.0" startX="-80.73330688476562" startY="-5.0" stroke="WHITE" />
-      <Line endX="-80.73330688476562" endY="29.999996185302734" layoutX="1257.0" layoutY="20.0" startX="-80.73330688476562" startY="-5.0" stroke="WHITE" />
-      <HBox alignment="CENTER" layoutX="280.0" layoutY="266.0" prefHeight="250.0" prefWidth="911.0">
+      <Line endX="-80.73330688476562" endY="29.999996185302734" layoutX="1427.0" layoutY="20.0" startX="-80.73330688476562" startY="-5.0" stroke="WHITE" />
+      <HBox alignment="CENTER" layoutX="385.0" layoutY="297.0" prefHeight="250.0" prefWidth="911.0">
          <children>
-            <Pane prefHeight="254.0" prefWidth="262.0" style="-fx-border-color: #7f7c62;" />
-            <Pane prefHeight="254.0" prefWidth="262.0" style="-fx-border-color: #7f7c62;" />
-            <Pane prefHeight="254.0" prefWidth="262.0" style="-fx-border-color: #7f7c62;" />
+            <Pane prefHeight="200.0" prefWidth="250.0" style="-fx-border-color: #7f7c62; -fx-background-color: #abaa85;">
+               <children>
+                  <Text layoutX="50.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patients">
+                     <font>
+                        <Font name="Algerian" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="50.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="149.99999999999994">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="80.0" layoutY="10.0">
+                     <image>
+                        <Image url="@assets/bed-solid.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane prefHeight="250.0" prefWidth="57.0" />
+            <Pane prefHeight="200.0" prefWidth="250.0" style="-fx-border-color: #7f7c62; -fx-background-color: #abaa85;">
+               <children>
+                  <Text layoutX="50.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terapists">
+                     <font>
+                        <Font name="Algerian" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="50.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="149.99999999999994">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="80.0" layoutY="10.0">
+                     <image>
+                        <Image url="@assets/user-doctor-solid.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane prefHeight="250.0" prefWidth="57.0" />
+            <Pane prefHeight="200.0" prefWidth="250.0" style="-fx-border-color: #7f7c62; -fx-background-color: #abaa85;">
+               <children>
+                  <Text layoutX="50.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sessions">
+                     <font>
+                        <Font name="Algerian" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="50.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="149.99999999999994">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="80.0" layoutY="10.0">
+                     <image>
+                        <Image url="@assets/user-clock-solid.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
          </children>
       </HBox>
    </children>
