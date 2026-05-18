@@ -5,6 +5,7 @@ module lk.ijse.serenity.serenitytherapycenter {
     requires com.dlsc.formsfx;
     requires jakarta.persistence;
     requires org.hibernate.orm.core;
+    requires java.desktop;
 
     opens lk.ijse.serenity.serenitytherapycenter to javafx.fxml;
     opens lk.ijse.serenity.serenitytherapycenter.controller to javafx.fxml;

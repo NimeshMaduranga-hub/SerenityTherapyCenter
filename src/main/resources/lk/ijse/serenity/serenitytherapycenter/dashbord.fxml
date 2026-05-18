@@ -40,38 +40,38 @@
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Patients">
+            <Button mnemonicParsing="false" onAction="#patientsBtnOnAction" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Patients">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Therapists">
+            <Button mnemonicParsing="false" onAction="#therapistsBtnOnAction" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Therapists">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Programs">
+            <Button mnemonicParsing="false" onAction="#programsBtnOnAction" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Programs">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Sessions">
+            <Button mnemonicParsing="false" onAction="#sessionsBtnOnAction" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Sessions">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Registration">
+            <Button mnemonicParsing="false" onAction="#registrationBtnOnAction" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Registration">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Payment">
+            <Button mnemonicParsing="false" onAction="#paymentBtnOnAction" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Payment">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
             <Pane prefHeight="106.0" prefWidth="247.0" />
-            <Button mnemonicParsing="false" style="-fx-background-color: #c46a5a; -fx-text-fill: #ffffff;" text="Log out">
+            <Button mnemonicParsing="false" onAction="#logOutBtnOnAction" style="-fx-background-color: #c46a5a; -fx-text-fill: #ffffff;" text="Log out">
                <font>
                   <Font size="20.0" />
                </font>
@@ -95,7 +95,7 @@
              <Region HBox.hgrow="ALWAYS" />
 
              <Pane prefHeight="65.0" prefWidth="394.0" />
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " wrappingWidth="168.91064453125">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: " wrappingWidth="88.91064453125">
                <font>
                   <Font name="Algerian" size="25.0" />
                </font>
