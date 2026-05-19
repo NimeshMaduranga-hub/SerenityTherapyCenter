@@ -1,0 +1,226 @@
+
+/* =======================
+   ROOT THEME
+======================= */
+.root {
+    -fx-background-color: #eef1ea;
+    -fx-font-family: "Segoe UI";
+}
+
+/* =======================
+   TEXT
+======================= */
+.text {
+    -fx-fill: #2f3a2f;
+}
+
+/* =======================
+   SIDEBAR BUTTONS
+======================= */
+.sidebar-btn {
+    -fx-background-color: #dfe4d7;   /* soft neutral */
+    -fx-text-fill: #2f3a2f;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.sidebar-btn:hover {
+    -fx-background-color: #cfd6c8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 6, 0, 0, 2);
+}
+
+/* =======================
+   TOP BAR
+======================= */
+.top-bar {
+    -fx-background-color: #5a6b5a;   /* deep soft green */
+}
+
+.top-text {
+    -fx-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* =======================
+   TEXTFIELD
+======================= */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #b7c3b2;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 6 10 6 10;
+}
+
+.text-field:focused {
+    -fx-border-color: #5a6b5a;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 6, 0, 0, 2);
+}
+
+/* =======================
+   COMBOBOX
+======================= */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #b7c3b2;
+    -fx-border-radius: 6px;
+}
+
+.combo-box:hover {
+    -fx-border-color: #5a6b5a;
+}
+
+.combo-box:focused {
+    -fx-border-color: #5a6b5a;
+}
+
+/* =======================
+   GLOBAL BUTTON STYLE
+======================= */
+.button {
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+}
+
+/* =======================
+   SAVE BUTTON
+======================= */
+.save-btn {
+    -fx-background-color: #5a6b5a;   /* deep green */
+}
+.save-btn:hover {
+    -fx-background-color: #4d5d4d;
+}
+
+/* =======================
+   UPDATE BUTTON
+======================= */
+.update-btn {
+    -fx-background-color: #6f7f6f;   /* muted green-gray */
+}
+.update-btn:hover {
+    -fx-background-color: #5f6f5f;
+}
+
+/* =======================
+   DELETE BUTTON
+======================= */
+.delete-btn {
+    -fx-background-color: #c45a5a;   /* soft red */
+}
+.delete-btn:hover {
+    -fx-background-color: #b24d4d;
+}
+
+/* =======================
+   RESET BUTTON
+======================= */
+.reset-btn {
+    -fx-background-color: #9aa39a;   /* neutral gray-green */
+}
+.reset-btn:hover {
+    -fx-background-color: #8b948b;
+}
+
+/* =======================
+   SEARCH BUTTON
+======================= */
+.search-btn {
+    -fx-background-color: #4f5f6f;   /* blue-gray */
+}
+.search-btn:hover {
+    -fx-background-color: #3f4f5f;
+}
+
+/* =======================
+   LOGOUT BUTTON (RED 🔥)
+======================= */
+.logout-btn {
+    -fx-background-color: #e63946;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+}
+
+.logout-btn:hover {
+    -fx-background-color: #d62828;
+}
+
+/* =======================
+   TEXT AREA
+======================= */
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #b7c3b2;
+    -fx-border-radius: 6px;
+}
+
+.text-area .content {
+    -fx-background-color: #ffffff;
+}
+
+.text-area:focused {
+    -fx-border-color: #5a6b5a;
+}
+
+/* =======================
+   TABLE VIEW
+======================= */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #b7c3b2;
+    -fx-border-radius: 8px;
+}
+
+/* HEADER */
+.table-view .column-header-background {
+    -fx-background-color: #5a6b5a;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* ROWS */
+.table-row-cell {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f4f6f2;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #e6ebe3;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #6f7f6f;
+}
+
+/* TEXT */
+.table-cell {
+    -fx-text-fill: #2f3a2f;
+}
+
+/* =======================
+   DASHBOARD CARDS
+======================= */
+.dashboard-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-border-color: #c7d0c3;
+    -fx-border-radius: 10px;
+}
+
+.dashboard-card:hover {
+    -fx-background-color: #f4f6f2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 8, 0, 0, 3);
+}

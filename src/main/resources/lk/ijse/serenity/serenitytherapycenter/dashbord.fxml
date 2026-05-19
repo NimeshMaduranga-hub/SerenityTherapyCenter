@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #e2dec9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.Dashbordcontroller">
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" styleClass="dashboard-card" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.Dashbordcontroller">
    <children>
       <VBox alignment="CENTER" layoutX="-4.0" layoutY="-6.0" prefHeight="705.0" prefWidth="256.0" spacing="10" style="-fx-background-color: #9a9778;">
          <children>
@@ -35,43 +35,43 @@
                   </Text>
                </children>
             </Pane>
-            <Button mnemonicParsing="false" onAction="#dashboardBtnOnAction" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Dashboard">
+            <Button mnemonicParsing="false" onAction="#dashboardBtnOnAction" prefHeight="50.0" prefWidth="200.0" styleClass="sidebar-btn" stylesheets="@stylesheet.css" text="Dashboard">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#patientsBtnOnAction" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Patients">
+            <Button mnemonicParsing="false" onAction="#patientsBtnOnAction" prefHeight="48.0" prefWidth="200.0" styleClass="sidebar-btn" stylesheets="@stylesheet.css" text="Patients">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#therapistsBtnOnAction" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Therapists">
+            <Button mnemonicParsing="false" onAction="#therapistsBtnOnAction" prefWidth="200.0" styleClass="sidebar-btn" stylesheets="@stylesheet.css" text="Therapists">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#programsBtnOnAction" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Programs">
+            <Button mnemonicParsing="false" onAction="#programsBtnOnAction" prefWidth="200.0" styleClass="sidebar-btn" stylesheets="@stylesheet.css" text="Programs">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#sessionsBtnOnAction" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Sessions">
+            <Button mnemonicParsing="false" onAction="#sessionsBtnOnAction" prefWidth="200.0" styleClass="sidebar-btn" stylesheets="@stylesheet.css" text="Sessions">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#registrationBtnOnAction" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Registration">
+            <Button mnemonicParsing="false" onAction="#registrationBtnOnAction" prefHeight="50.0" prefWidth="200.0" styleClass="sidebar-btn" stylesheets="@stylesheet.css" text="Registration">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#paymentBtnOnAction" prefWidth="200.0" style="-fx-background-color: #d6d2bd; -fx-text-fill: #2f2f2f;" text="Payment">
+            <Button mnemonicParsing="false" onAction="#paymentBtnOnAction" prefWidth="200.0" styleClass="sidebar-btn" stylesheets="@stylesheet.css" text="Payment">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
             <Pane prefHeight="106.0" prefWidth="247.0" />
-            <Button mnemonicParsing="false" onAction="#logOutBtnOnAction" style="-fx-background-color: #c46a5a; -fx-text-fill: #ffffff;" text="Log out">
+            <Button mnemonicParsing="false" onAction="#logOutBtnOnAction" styleClass="sidebar-btn" stylesheets="@stylesheet.css" text="Log out">
                <font>
                   <Font size="20.0" />
                </font>
@@ -82,7 +82,7 @@
       <HBox alignment="CENTER_LEFT" layoutX="250.0" layoutY="-1.0" prefHeight="65.0" prefWidth="1115.0" spacing="10" style="-fx-background-color: #9a9778;">
          <children>
             <Pane prefHeight="65.0" prefWidth="176.0" />
-            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="User : " wrappingWidth="90.91064453125">
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="top-bartop-text" text="User : " wrappingWidth="90.91064453125">
                <font>
                   <Font name="Algerian" size="25.0" />
                </font>
@@ -111,7 +111,7 @@
       <Line endX="-80.73330688476562" endY="29.999996185302734" layoutX="1427.0" layoutY="20.0" startX="-80.73330688476562" startY="-5.0" stroke="WHITE" />
       <HBox alignment="CENTER" layoutX="385.0" layoutY="297.0" prefHeight="250.0" prefWidth="911.0">
          <children>
-            <Pane prefHeight="200.0" prefWidth="250.0" style="-fx-border-color: #7f7c62; -fx-background-color: #abaa85;">
+            <Pane prefHeight="200.0" prefWidth="250.0" styleClass="dashboard-card" stylesheets="@stylesheet.css">
                <children>
                   <Text layoutX="50.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patients">
                      <font>
@@ -130,7 +130,7 @@
                   </ImageView>
                </children></Pane>
             <Pane prefHeight="250.0" prefWidth="57.0" />
-            <Pane prefHeight="200.0" prefWidth="250.0" style="-fx-border-color: #7f7c62; -fx-background-color: #abaa85;">
+            <Pane prefHeight="200.0" prefWidth="250.0" styleClass="dashboard-card" stylesheets="@stylesheet.css">
                <children>
                   <Text layoutX="50.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terapists">
                      <font>
@@ -149,7 +149,7 @@
                   </ImageView>
                </children></Pane>
             <Pane prefHeight="250.0" prefWidth="57.0" />
-            <Pane prefHeight="200.0" prefWidth="250.0" style="-fx-border-color: #7f7c62; -fx-background-color: #abaa85;">
+            <Pane prefHeight="200.0" prefWidth="250.0" styleClass="dashboard-card" stylesheets="@stylesheet.css">
                <children>
                   <Text layoutX="50.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sessions">
                      <font>
