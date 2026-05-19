@@ -90,17 +90,17 @@
             </Text>
             <ButtonBar layoutX="208.0" layoutY="315.0" prefHeight="40.0" prefWidth="200.0">
               <buttons>
-                <Button fx:id="pr_btn_link" mnemonicParsing="false" onAction="#handelLinkProgram" styleClass="save-btn" text="Link" />
-                  <Button fx:id="pr_btn_unlink" mnemonicParsing="false" onAction="#handelUnlinkProgram" styleClass="delete-btn" text="Remove" />
+                <Button fx:id="pr_btn_link" mnemonicParsing="false" onAction="#handelLinkProgram" styleClass="link-btn" text="Link" />
+                  <Button fx:id="pr_btn_unlink" mnemonicParsing="false" onAction="#handelUnlinkProgram" styleClass="remove-btn" text="Remove" />
               </buttons>
             </ButtonBar>
          </children>
       </Pane>
       <Line endX="35.0" endY="13.333335876464844" layoutX="533.0" layoutY="96.0" startX="35.0" startY="318.0" stroke="#7c7878" />
       <Label fx:id="p_search_text" layoutX="613.0" layoutY="18.0" text="Search Program by ID or Name" />
-      <TextField fx:id="pr_search_field" layoutX="611.0" layoutY="37.0" prefHeight="30.0" prefWidth="190.0" />
-      <Button layoutX="808.0" layoutY="39.0" mnemonicParsing="false" onAction="#handelSearchProgram" prefHeight="22.0" prefWidth="75.0" text="Search" />
-      <Button layoutX="889.0" layoutY="40.0" mnemonicParsing="false" onAction="#viewProgramDetailTable" text="View Details" />
+      <TextField fx:id="pr_search_field" layoutX="611.0" layoutY="37.0" prefHeight="30.0" prefWidth="190.0" styleClass="search-field" stylesheets="@stylesheet.css" />
+      <Button layoutX="808.0" layoutY="39.0" mnemonicParsing="false" onAction="#handelSearchProgram" prefHeight="22.0" prefWidth="75.0" styleClass="search-btn" stylesheets="@stylesheet.css" text="Search" />
+      <Button layoutX="889.0" layoutY="40.0" mnemonicParsing="false" onAction="#viewProgramDetailTable" styleClass="view-btn" stylesheets="@stylesheet.css" text="View Details" />
       <TableView layoutX="52.0" layoutY="466.0" prefHeight="133.0" prefWidth="1034.0" stylesheets="@stylesheet.css">
         <columns>
           <TableColumn fx:id="col_pr_id_2" prefWidth="187.0" text="Program ID" />

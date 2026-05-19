@@ -29,7 +29,7 @@
                   <Pane layoutX="26.0" layoutY="18.0" prefHeight="89.0" prefWidth="1050.0" styleClass="card" stylesheets="@stylesheet.css">
                      <children>
                         <TextField fx:id="r_id_field" layoutX="119.0" layoutY="32.0" prefHeight="30.0" prefWidth="243.0" />
-                        <ComboBox fx:id="r_session_combobox" layoutX="460.0" layoutY="32.0" onAction="#fillSessionData" prefHeight="30.0" prefWidth="220.0" promptText="Select a Session" />
+                        <ComboBox fx:id="r_session_combobox" layoutX="460.0" layoutY="32.0" onAction="#fillSessionData" prefHeight="30.0" prefWidth="220.0" promptText="Select a Session" styleClass="session combobox" />
                         <ComboBox fx:id="r_patient_combobox" layoutX="794.0" layoutY="32.0" prefHeight="30.0" prefWidth="220.0" promptText="Select a Patient" styleClass="combo-box" stylesheets="@stylesheet.css" />
                         <Text layoutX="712.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient  :">
                            <font>
@@ -95,8 +95,8 @@
                         <TextField fx:id="r_pay_total_field" layoutX="507.0" layoutY="105.0" prefHeight="30.0" prefWidth="160.0" />
                         <Text layoutX="417.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pay Amount   :" />
                         <Line endX="-100.0" endY="124.0" layoutX="815.0" layoutY="50.0" startX="-100.0" />
-                        <TextField layoutX="752.0" layoutY="82.0" prefHeight="30.0" prefWidth="186.0" />
-                        <Button layoutX="948.0" layoutY="85.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="75.0" text="Search" />
+                        <TextField layoutX="752.0" layoutY="82.0" prefHeight="30.0" prefWidth="186.0" styleClass="search-toolbar" />
+                        <Button layoutX="948.0" layoutY="85.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="75.0" styleClass="search-btn" stylesheets="@stylesheet.css" text="Search" />
                          <ToolBar layoutX="753.0" layoutY="30.0" prefHeight="45.0" prefWidth="260.0" styleClass="search-toolbar">
 
                              <items>
