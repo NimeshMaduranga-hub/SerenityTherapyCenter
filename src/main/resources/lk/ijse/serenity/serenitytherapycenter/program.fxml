@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="624.0" prefWidth="1115.0" style="-fx-background-color: #e2dec9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.Programcontroller">
+   <children>
+      <Text fill="#575b51" layoutX="23.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Management">
+         <font>
+            <Font name="Algerian" size="33.0" />
+         </font>
+      </Text>
+      <Pane layoutX="45.0" layoutY="78.0" prefHeight="375.0" prefWidth="500.0" styleClass="card" stylesheets="@stylesheet.css">
+         <children>
+            <Text fill="#6f6f6f" layoutX="171.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-title" text="Program Date Form">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="pr_id_field" layoutX="150.0" layoutY="80.0" prefHeight="30.0" prefWidth="280.0" />
+            <TextField fx:id="pr_name_field" layoutX="150.0" layoutY="140.0" prefHeight="30.0" prefWidth="280.0" />
+            <TextField fx:id="pr_duration_field" layoutX="150.0" layoutY="200.0" prefHeight="30.0" prefWidth="280.0" />
+            <TextField fx:id="pr_fee_field" layoutX="150.0" layoutY="260.0" prefWidth="280.0" />
+            <Text layoutX="20.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program ID       :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Name :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration           :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fee                   :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <ButtonBar layoutX="76.0" layoutY="315.0" prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="pr_btn_save" mnemonicParsing="false" onAction="#handelSaveProgram" text="Save" />
+                  <Button fx:id="pr_btn_update" mnemonicParsing="false" onAction="#handelUpdateProgram" text="Update" />
+                  <Button fx:id="pr_btn_delete" mnemonicParsing="false" onAction="#handelDeleteProgram" text="Delete" />
+                  <Button mnemonicParsing="false" onAction="#clearFields" text="Reset" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </Pane>
+      <Pane layoutX="594.0" layoutY="77.0" prefHeight="375.0" prefWidth="500.0" styleClass="card" stylesheets="@stylesheet.css">
+         <children>
+            <Text fill="#6f6f6f" layoutX="190.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-title" text="Link Programs" />
+            <ComboBox fx:id="pr_t_name_combo_box" layoutX="194.0" layoutY="81.0" onAction="#fillTherapistData" prefHeight="24.0" prefWidth="277.0" />
+            <TextField fx:id="pr_t_id_field" layoutX="192.0" layoutY="138.0" prefHeight="30.0" prefWidth="280.0" />
+            <TextField fx:id="pr_t_contact_field" layoutX="194.0" layoutY="196.0" prefHeight="30.0" prefWidth="280.0" />
+            <TextField fx:id="pr_t_email_field" layoutX="192.0" layoutY="258.0" prefWidth="280.0" />
+            <Text layoutX="42.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terapist Name       :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="42.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terapist ID             :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="42.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact                  :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="42.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email                      :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <ButtonBar layoutX="208.0" layoutY="315.0" prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                <Button fx:id="pr_btn_link" mnemonicParsing="false" onAction="#handelLinkProgram" text="Link" />
+                  <Button fx:id="pr_btn_unlink" mnemonicParsing="false" onAction="#handelUnlinkProgram" text="Remove" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </Pane>
+      <Line endX="35.0" endY="13.333335876464844" layoutX="533.0" layoutY="96.0" startX="35.0" startY="318.0" stroke="#7c7878" />
+      <Label fx:id="p_search_text" layoutX="613.0" layoutY="18.0" text="Search Program by ID or Name" />
+      <TextField fx:id="pr_search_field" layoutX="611.0" layoutY="37.0" prefHeight="30.0" prefWidth="190.0" />
+      <Button layoutX="808.0" layoutY="39.0" mnemonicParsing="false" onAction="#handelSearchProgram" prefHeight="22.0" prefWidth="75.0" text="Search" />
+      <Button layoutX="889.0" layoutY="40.0" mnemonicParsing="false" onAction="#viewProgramDetailTable" text="View Details" />
+      <TableView layoutX="52.0" layoutY="466.0" prefHeight="133.0" prefWidth="1034.0">
+        <columns>
+          <TableColumn fx:id="col_pr_id_2" prefWidth="187.0" text="Program ID" />
+          <TableColumn fx:id="col_pr_name_2" prefWidth="378.0" text="Program" />
+            <TableColumn fx:id="col_t_id" prefWidth="229.0" text="Therapist ID" />
+            <TableColumn fx:id="col_t_name" prefWidth="238.0" text="Therapist" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
