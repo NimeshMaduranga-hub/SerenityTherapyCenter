@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="915.0" prefWidth="1115.0" style="-fx-background-color: #e2dec9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.Registrationcontroller">
+   <children>
+      <Text layoutX="23.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Registration">
+         <font>
+            <Font name="Algerian" size="33.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutY="99.0" prefHeight="842.0" prefWidth="1112.0" style="-fx-background-color: #e2dec9;">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1090.0" prefWidth="1100.0">
+               <children>
+                  <Pane layoutX="26.0" layoutY="18.0" prefHeight="89.0" prefWidth="1050.0" styleClass="card" stylesheets="@stylesheet.css">
+                     <children>
+                        <TextField fx:id="r_id_field" layoutX="119.0" layoutY="32.0" prefHeight="30.0" prefWidth="243.0" />
+                        <ComboBox fx:id="r_session_combobox" layoutX="460.0" layoutY="32.0" onAction="#fillSessionData" prefHeight="30.0" prefWidth="220.0" promptText="Select a Session" />
+                        <ComboBox fx:id="r_patient_combobox" layoutX="794.0" layoutY="32.0" prefHeight="30.0" prefWidth="220.0" promptText="Select a Patient" styleClass="combo-box" stylesheets="@stylesheet.css" />
+                        <Text layoutX="712.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient  :">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="387.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Session  :">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="15.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register ID   :">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="20.0" layoutY="116.0" prefHeight="250.0" prefWidth="525.0" styleClass="card" stylesheets="@stylesheet.css">
+                     <children>
+                        <Text fill="#6f6f6f" layoutX="187.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-title" text="Progarm Data" />
+                        <TextField fx:id="r_p_name_field" layoutX="160.0" layoutY="40.0" prefHeight="30.0" prefWidth="260.0" />
+                        <TextField fx:id="r_p_duration" layoutX="160.0" layoutY="80.0" prefHeight="30.0" prefWidth="260.0" />
+                        <TextField fx:id="r_p_fee_field" layoutX="160.0" layoutY="120.0" prefHeight="30.0" prefWidth="260.0" />
+                        <TextField fx:id="r_p_day_field" layoutX="160.0" layoutY="160.0" prefHeight="30.0" prefWidth="260.0" />
+                        <TextField fx:id="r_p_time_field" layoutX="160.0" layoutY="200.0" prefHeight="30.0" prefWidth="260.0" />
+                        <Text layoutX="55.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Name  :" />
+                        <Text layoutX="55.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration            :" />
+                        <Text layoutX="55.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fee                    :" />
+                        <Text layoutX="55.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day                   :" />
+                        <Text layoutX="55.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time                 :" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="551.0" layoutY="116.0" prefHeight="250.0" prefWidth="525.0" styleClass="card" stylesheets="@stylesheet.css">
+                     <children>
+                        <Text fill="#6f6f6f" layoutX="203.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-title" text="Therapist Data" />
+                        <TextField fx:id="r_t_name_field" layoutX="164.0" layoutY="50.0" prefHeight="30.0" prefWidth="338.0" />
+                        <TextField fx:id="r_t_contact_field" layoutX="164.0" layoutY="100.0" prefHeight="30.0" prefWidth="338.0" />
+                        <TextField fx:id="r_t_email_field" layoutX="164.0" layoutY="150.0" prefHeight="30.0" prefWidth="338.0" />
+                        <Text layoutX="55.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Therapist Name    :" />
+                        <Text layoutX="55.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact                 :" />
+                        <Text layoutX="55.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email                    :" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="15.0" layoutY="378.0" prefHeight="229.0" prefWidth="1060.0" styleClass="card" stylesheets="@stylesheet.css">
+                     <children>
+                        <Text fill="#6f6f6f" layoutX="483.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="card-title" text="Payment Data" />
+                        <TextField fx:id="r_pay_id_field" layoutX="210.0" layoutY="55.0" prefHeight="30.0" prefWidth="160.0" />
+                        <TextField fx:id="r_pay_grand_total_field" layoutX="507.0" layoutY="55.0" prefHeight="30.0" prefWidth="160.0" />
+                        <TextField fx:id="r_pay_due_amount_field" layoutX="210.0" layoutY="105.0" prefHeight="30.0" prefWidth="160.0" />
+                        <Text layoutX="108.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment ID      :" />
+                        <Text layoutX="419.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total              :" />
+                        <Text layoutX="108.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Due Amount    :" />
+                        <ComboBox fx:id="r_pay_type_combobox" layoutX="210.0" layoutY="155.0" prefHeight="30.0" prefWidth="161.0" promptText="Select a Payment Type" />
+                        <Text layoutX="108.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pay Type          :" />
+                        <ButtonBar layoutX="402.0" layoutY="154.0" prefHeight="40.0" prefWidth="200.0">
+                          <buttons>
+                            <Button fx:id="r_btn_save" mnemonicParsing="false" onAction="#handelSaveRegistration" styleClass="save-btn" text="Save" />
+                              <Button fx:id="r_btn_update" mnemonicParsing="false" onAction="#handelUpdateRegistration" styleClass="update-btn" text="Update" />
+                              <Button mnemonicParsing="false" onAction="#clearFields" styleClass="reset-btn" text="Reset" />
+                          </buttons>
+                        </ButtonBar>
+                        <TextField fx:id="r_pay_total_field" layoutX="507.0" layoutY="105.0" prefHeight="30.0" prefWidth="160.0" />
+                        <Text layoutX="417.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pay Amount   :" />
+                        <Line endX="-100.0" endY="124.0" layoutX="815.0" layoutY="50.0" startX="-100.0" />
+                        <TextField layoutX="752.0" layoutY="82.0" prefHeight="30.0" prefWidth="186.0" />
+                        <Button layoutX="948.0" layoutY="85.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="75.0" text="Search" />
+                         <ToolBar layoutX="753.0" layoutY="30.0" prefHeight="45.0" prefWidth="260.0" styleClass="search-toolbar">
+
+                             <items>
+                                 <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="toolbar-title" text="Search By" />
+
+                                 <Line endX="-100.0" endY="21.0" startX="-100.0" stroke="#756969" styleClass="toolbar-line" />
+
+                                 <RadioButton fx:id="r_id_radio" mnemonicParsing="false" onAction="#uncheckOthers" styleClass="modern-radio" text="ID" />
+
+                                 <Line endX="-100.0" endY="21.0" startX="-100.0" stroke="#756969" styleClass="toolbar-line" />
+
+                                 <RadioButton fx:id="r_p_radio" mnemonicParsing="false" onAction="#uncheckOthers" styleClass="modern-radio" text="Patient" />
+
+                             </items>
+                         </ToolBar>
+                     </children>
+                  </Pane>
+                  <TableView layoutX="22.0" layoutY="618.0" prefHeight="218.0" prefWidth="1055.0" stylesheets="@stylesheet.css">
+                    <columns>
+                      <TableColumn prefWidth="127.0" text="Registration ID" />
+                      <TableColumn prefWidth="185.0" text="Session ID" />
+                        <TableColumn prefWidth="163.0" text="Patient" />
+                        <TableColumn prefWidth="181.0" text="Program" />
+                        <TableColumn prefWidth="173.0" text="Therapist" />
+                        <TableColumn prefWidth="225.0" text="Registre Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

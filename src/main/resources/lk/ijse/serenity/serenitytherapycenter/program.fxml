@@ -13,7 +13,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="624.0" prefWidth="1115.0" style="-fx-background-color: #e2dec9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.Programcontroller">
    <children>
       <Text fill="#575b51" layoutX="23.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Management">
@@ -52,12 +51,12 @@
                   <Font size="16.0" />
                </font>
             </Text>
-            <ButtonBar layoutX="76.0" layoutY="315.0" prefHeight="40.0" prefWidth="200.0">
+            <ButtonBar layoutX="76.0" layoutY="315.0" prefHeight="40.0" prefWidth="200.0" stylesheets="@stylesheet.css">
               <buttons>
-                <Button fx:id="pr_btn_save" mnemonicParsing="false" onAction="#handelSaveProgram" text="Save" />
-                  <Button fx:id="pr_btn_update" mnemonicParsing="false" onAction="#handelUpdateProgram" text="Update" />
-                  <Button fx:id="pr_btn_delete" mnemonicParsing="false" onAction="#handelDeleteProgram" text="Delete" />
-                  <Button mnemonicParsing="false" onAction="#clearFields" text="Reset" />
+                <Button fx:id="pr_btn_save" mnemonicParsing="false" onAction="#handelSaveProgram" styleClass="save-btn" text="Save" />
+                  <Button fx:id="pr_btn_update" mnemonicParsing="false" onAction="#handelUpdateProgram" styleClass="update-btn" text="Update" />
+                  <Button fx:id="pr_btn_delete" mnemonicParsing="false" onAction="#handelDeleteProgram" styleClass="delete-btn" text="Delete" />
+                  <Button mnemonicParsing="false" onAction="#clearFields" styleClass="reset-btn" text="Reset" />
               </buttons>
             </ButtonBar>
          </children>
@@ -68,7 +67,7 @@
             <ComboBox fx:id="pr_t_name_combo_box" layoutX="194.0" layoutY="81.0" onAction="#fillTherapistData" prefHeight="24.0" prefWidth="277.0" />
             <TextField fx:id="pr_t_id_field" layoutX="192.0" layoutY="138.0" prefHeight="30.0" prefWidth="280.0" />
             <TextField fx:id="pr_t_contact_field" layoutX="194.0" layoutY="196.0" prefHeight="30.0" prefWidth="280.0" />
-            <TextField fx:id="pr_t_email_field" layoutX="192.0" layoutY="258.0" prefWidth="280.0" />
+            <TextField fx:id="pr_t_email_field" layoutX="192.0" layoutY="258.0" prefWidth="280.0" stylesheets="@stylesheet.css" />
             <Text layoutX="42.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terapist Name       :">
                <font>
                   <Font size="16.0" />
@@ -91,8 +90,8 @@
             </Text>
             <ButtonBar layoutX="208.0" layoutY="315.0" prefHeight="40.0" prefWidth="200.0">
               <buttons>
-                <Button fx:id="pr_btn_link" mnemonicParsing="false" onAction="#handelLinkProgram" text="Link" />
-                  <Button fx:id="pr_btn_unlink" mnemonicParsing="false" onAction="#handelUnlinkProgram" text="Remove" />
+                <Button fx:id="pr_btn_link" mnemonicParsing="false" onAction="#handelLinkProgram" styleClass="save-btn" text="Link" />
+                  <Button fx:id="pr_btn_unlink" mnemonicParsing="false" onAction="#handelUnlinkProgram" styleClass="delete-btn" text="Remove" />
               </buttons>
             </ButtonBar>
          </children>
@@ -102,7 +101,7 @@
       <TextField fx:id="pr_search_field" layoutX="611.0" layoutY="37.0" prefHeight="30.0" prefWidth="190.0" />
       <Button layoutX="808.0" layoutY="39.0" mnemonicParsing="false" onAction="#handelSearchProgram" prefHeight="22.0" prefWidth="75.0" text="Search" />
       <Button layoutX="889.0" layoutY="40.0" mnemonicParsing="false" onAction="#viewProgramDetailTable" text="View Details" />
-      <TableView layoutX="52.0" layoutY="466.0" prefHeight="133.0" prefWidth="1034.0">
+      <TableView layoutX="52.0" layoutY="466.0" prefHeight="133.0" prefWidth="1034.0" stylesheets="@stylesheet.css">
         <columns>
           <TableColumn fx:id="col_pr_id_2" prefWidth="187.0" text="Program ID" />
           <TableColumn fx:id="col_pr_name_2" prefWidth="378.0" text="Program" />
