@@ -249,3 +249,158 @@
 .table-row-cell:selected {
     -fx-background-color: #b3c6a8;
 }
+
+
+/* ================= MAIN LOGIN CARD ================= */
+
+.main-card {
+    -fx-background-color: white;
+    -fx-background-radius: 24;
+    -fx-border-radius: 24;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0,0,0,0.12),
+            25,
+            0.2,
+            0,
+            6
+    );
+}
+
+/* ================= LEFT PANEL ================= */
+
+.left-panel {
+    -fx-background-color: linear-gradient(to bottom right, #5f5e45, #4a4935);
+    -fx-background-radius: 24 0 0 24;
+}
+
+.brand-title {
+    -fx-fill: white;
+    -fx-font-family: "Berlin Sans FB Demi";
+    -fx-font-size: 74px;
+}
+
+.brand-subtitle {
+    -fx-fill: #f2f2f2;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.quote-text {
+    -fx-fill: white;
+    -fx-font-family: "Kristen ITC";
+    -fx-font-size: 34px;
+}
+
+/* ================= RIGHT PANEL ================= */
+
+.right-panel {
+    -fx-background-color: #e3dfc9;
+    -fx-background-radius: 0 24 24 0;
+    -fx-padding: 50;
+}
+
+.login-title {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2d2d1f;
+}
+
+/* ================= TEXTFIELDS ================= */
+
+.text-field,
+.password-field {
+
+    -fx-background-color: #ffffff;
+
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+
+    -fx-border-color: #d4cfb4;
+    -fx-border-width: 1.5;
+
+    -fx-padding: 0 15 0 15;
+
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+
+    -fx-pref-height: 45;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0,0,0,0.04),
+            5,
+            0,
+            0,
+            1
+    );
+}
+
+.text-field:focused,
+.password-field:focused {
+
+    -fx-border-color: #6d6b4d;
+    -fx-border-width: 2;
+
+    -fx-background-color: white;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(109,107,77,0.25),
+            10,
+            0,
+            0,
+            2
+    );
+}
+
+/* ================= PROMPT TEXT ================= */
+
+.text-field .text,
+.password-field .text {
+    -fx-fill: #666666;
+}
+
+/* ================= LOGIN BUTTON ================= */
+
+.login-button {
+
+    -fx-background-color: linear-gradient(to bottom, #5f5e45, #474632);
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 12;
+
+    -fx-cursor: hand;
+
+    -fx-pref-height: 45;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0,0,0,0.15),
+            10,
+            0,
+            0,
+            3
+    );
+}
+
+.login-button:hover {
+
+    -fx-background-color: linear-gradient(to bottom, #6e6d50, #56553d);
+
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.login-button:pressed {
+
+    -fx-background-color: #3f3e2d;
+
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}

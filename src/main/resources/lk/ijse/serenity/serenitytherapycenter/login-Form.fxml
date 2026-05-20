@@ -14,34 +14,34 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="491.0" prefWidth="1040.0" style="-fx-background-color: linear-gradient(to bottom right, #f5f7fa, #c3cfe2); -fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.LoginControllerForm">
+<AnchorPane prefHeight="491.0" prefWidth="1040.0" styleClass="root" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.LoginControllerForm">
 
    <children>
 
-      <BorderPane style="-fx-background-color: white;                            -fx-background-radius: 20;                            -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 15, 0, 0, 5);" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <BorderPane prefHeight="354.0" prefWidth="1325.0" style="-fx-background-color: white;                            -fx-background-radius: 20;                            -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 15, 0, 0, 5);" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
 
          <!-- LEFT SIDE -->
          <left>
-            <VBox alignment="CENTER" prefHeight="451.0" prefWidth="674.0" spacing="20" style="-fx-background-radius: 20 0 0 20; -fx-background-color: #595942;">
+            <VBox alignment="CENTER" prefHeight="451.0" prefWidth="674.0" spacing="20" styleClass="left-panel" stylesheets="@stylesheet.css">
                <children>
-                  <Pane prefHeight="451.0" prefWidth="526.0">
+                  <Pane prefHeight="451.0" prefWidth="717.0">
                      <children>
-                        <ImageView fitHeight="338.0" fitWidth="312.0" layoutX="70.0" layoutY="48.0">
+                        <ImageView fitHeight="338.0" fitWidth="312.0" layoutX="30.0" layoutY="78.0">
                            <image>
                               <Image url="@assets/download.png" />
                            </image>
                         </ImageView>
-                        <Text fill="#f8f8f8" layoutX="368.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serenity">
+                        <Text fill="#f8f8f8" layoutX="348.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="brand-title" text="Serenity">
                            <font>
                               <Font name="Berlin Sans FB Demi Bold" size="76.0" />
                            </font>
                         </Text>
-                        <Text fill="WHITE" layoutX="376.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mental Health Center" wrappingWidth="273.4892578125">
+                        <Text fill="WHITE" layoutX="356.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="brand-subtitle" text="Mental Health Center" wrappingWidth="273.4892578125">
                            <font>
                               <Font size="29.0" />
                            </font>
                         </Text>
-                        <Text fill="WHITE" layoutX="33.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Brain Can Change">
+                        <Text fill="WHITE" layoutX="328.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="brand-subtitle" text="Your Brain Can Change">
                            <font>
                               <Font name="Kristen ITC" size="37.0" />
                            </font>
@@ -54,17 +54,17 @@
 
          <!-- RIGHT SIDE -->
          <right>
-            <VBox alignment="CENTER_LEFT" prefHeight="451.0" prefWidth="651.0" spacing="20" style="-fx-padding: 50; -fx-background-color: #deddc5;">
+            <VBox alignment="CENTER_LEFT" prefHeight="451.0" prefWidth="651.0" spacing="20" style="-fx-padding: 50; -fx-background-color: #deddc5;" styleClass="left-panel" stylesheets="@stylesheet.css">
 
                <children>
 
-                  <Label style="-fx-font-size: 30px;                                       -fx-font-weight: bold;                                       -fx-text-fill: #1e293b;" text="Login" />
+                  <Label styleClass="login-title" stylesheets="@stylesheet.css" text="Login" />
 
                   <TextField fx:id="txtUsername" maxWidth="350" prefHeight="45" promptText="Username" style="-fx-background-radius: 10;                                           -fx-font-size: 14px;" />
 
                   <PasswordField fx:id="txtPassword" maxWidth="350" prefHeight="45" promptText="Password" style="-fx-background-radius: 10;                                               -fx-font-size: 14px;" />
 
-                  <Button fx:id="btnLogin" maxWidth="350" onAction="#btnLoginOnAction" prefHeight="45" style="-fx-background-color: #454426; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 10;" text="Login" />
+                  <Button fx:id="btnLogin" maxWidth="350" onAction="#btnLoginOnAction" prefHeight="45" styleClass="login-button" stylesheets="@stylesheet.css" text="Login" />
 
                </children>
 
