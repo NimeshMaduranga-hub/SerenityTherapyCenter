@@ -1,4 +1,4 @@
 package lk.ijse.serenity.serenitytherapycenter.controller;
 
-public class Sessioncontroller {
+public class PatientsController {
 }

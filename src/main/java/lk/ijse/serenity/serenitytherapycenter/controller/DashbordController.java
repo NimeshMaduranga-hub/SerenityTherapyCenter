@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 
 import java.awt.event.ActionEvent;
 
-public class Dashbordcontroller {
+public class DashbordController {
 
     @FXML
     void dashboardBtnOnAction(ActionEvent event) {
