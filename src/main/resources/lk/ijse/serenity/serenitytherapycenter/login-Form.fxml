@@ -22,9 +22,9 @@
 
          <!-- LEFT SIDE -->
          <left>
-            <VBox alignment="CENTER" prefHeight="451.0" prefWidth="674.0" spacing="20" styleClass="left-panel" stylesheets="@stylesheet.css">
+            <VBox alignment="CENTER" prefHeight="451.0" prefWidth="674.0" spacing="20" styleClass="rigth-panel" stylesheets="@stylesheet.css">
                <children>
-                  <Pane prefHeight="451.0" prefWidth="717.0">
+                  <Pane prefHeight="451.0" prefWidth="717.0" styleClass="rigth-panel" stylesheets="@stylesheet.css">
                      <children>
                         <ImageView fitHeight="338.0" fitWidth="312.0" layoutX="30.0" layoutY="78.0">
                            <image>

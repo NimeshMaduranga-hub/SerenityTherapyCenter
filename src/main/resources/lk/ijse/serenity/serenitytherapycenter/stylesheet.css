@@ -4,7 +4,7 @@
 
 .root {
     -fx-font-family: "Segoe UI";
-    -fx-background-color: #e2dec9;
+    -fx-background-color: #ffffff;
 }
 
 
@@ -238,12 +238,12 @@
 
 .table-view {
     -fx-background-color: white;
-    -fx-border-color: #c9c5b8;
+    -fx-border-color: #44fb07;
     -fx-border-radius: 10;
 }
 
 .table-view .column-header-background {
-    -fx-background-color: #dcd6c3;
+    -fx-background-color: #39b557;
 }
 
 .table-row-cell:selected {
@@ -272,7 +272,10 @@
 
 .left-panel {
     -fx-background-color: linear-gradient(to bottom right, #5f5e45, #4a4935);
-    -fx-background-radius: 24 0 0 24;
+    -fx-background-radius: 0 24 24 0;
+}
+.rigth-panel {
+    -fx-background-color: linear-gradient(to bottom right, #5f5e45, #4a4935);
 }
 
 .brand-title {
@@ -297,7 +300,6 @@
 
 .right-panel {
     -fx-background-color: #e3dfc9;
-    -fx-background-radius: 0 24 24 0;
     -fx-padding: 50;
 }
 

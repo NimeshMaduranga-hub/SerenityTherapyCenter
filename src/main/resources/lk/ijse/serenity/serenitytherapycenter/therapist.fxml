@@ -21,14 +21,14 @@
       </Text>
       <Pane layoutX="75.0" layoutY="69.0" prefHeight="353.0" prefWidth="961.0" styleClass="card" stylesheets="@stylesheet.css">
          <children>
-            <TextField fx:id="t_id_field" layoutX="200.0" layoutY="50.0" prefHeight="30.0" prefWidth="332.0" styleClass="text-field" />
-            <TextField fx:id="t_name_field" layoutX="200.0" layoutY="100.0" prefHeight="30.0" prefWidth="332.0" />
-            <TextField fx:id="t_contact_field" layoutX="200.0" layoutY="150.0" prefHeight="30.0" prefWidth="332.0" />
-            <TextField fx:id="t_email_field" layoutX="200.0" layoutY="200.0" prefHeight="30.0" prefWidth="332.0" />
-            <Text layoutX="91.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Therapist ID          : " />
+            <TextField fx:id="t_id_field" layoutX="201.0" layoutY="34.0" prefHeight="30.0" prefWidth="332.0" styleClass="text-field" />
+            <TextField fx:id="t_name_field" layoutX="201.0" layoutY="94.0" prefHeight="30.0" prefWidth="332.0" />
+            <TextField fx:id="t_contact_field" layoutX="201.0" layoutY="154.0" prefHeight="30.0" prefWidth="332.0" />
+            <TextField fx:id="t_email_field" layoutX="201.0" layoutY="210.0" prefHeight="30.0" prefWidth="332.0" />
+            <Text layoutX="91.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Therapist ID          : " />
             <Text layoutX="91.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Therapist Name   :" />
-            <Text layoutX="91.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact number   :" />
-            <Text layoutX="91.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address       :" />
+            <Text layoutX="91.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact number   :" />
+            <Text layoutX="91.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email Address       :" />
             <ButtonBar layoutX="176.0" layoutY="272.0" prefHeight="40.0" prefWidth="200.0">
               <buttons>
                 <Button fx:id="t_btn_save" mnemonicParsing="false" onAction="#handelSaveTherapist" styleClass="save-btn" text="Save" />
@@ -42,7 +42,7 @@
                   <Insets />
                </opaqueInsets>
             </TextField>
-            <Button layoutX="853.0" layoutY="32.0" mnemonicParsing="false" onAction="#handelSearchTherapist" styleClass="search-btn" text="Search">
+            <Button layoutX="853.0" layoutY="41.0" mnemonicParsing="false" onAction="#handelSearchTherapist" styleClass="search-btn" text="Search">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
