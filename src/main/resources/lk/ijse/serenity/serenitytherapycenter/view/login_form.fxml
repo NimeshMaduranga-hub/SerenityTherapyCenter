@@ -28,20 +28,20 @@
                      <children>
                         <ImageView fitHeight="338.0" fitWidth="312.0" layoutX="30.0" layoutY="78.0">
                            <image>
-                              <Image url="@assets/download.png" />
+                              <Image url="@../assets/download.png" />
                            </image>
                         </ImageView>
-                        <Text fill="#f8f8f8" layoutX="348.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="brand-title" text="Serenity">
+                        <Text fill="#081d21" layoutX="348.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="brand-title" text="Serenity">
                            <font>
                               <Font name="Berlin Sans FB Demi Bold" size="76.0" />
                            </font>
                         </Text>
-                        <Text fill="WHITE" layoutX="356.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="brand-subtitle" text="Mental Health Center" wrappingWidth="273.4892578125">
+                        <Text fill="#21464a" layoutX="356.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="brand-subtitle" text="Mental Health Center" wrappingWidth="273.4892578125">
                            <font>
                               <Font size="29.0" />
                            </font>
                         </Text>
-                        <Text fill="WHITE" layoutX="328.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="brand-subtitle" text="Your Brain Can Change">
+                        <Text fill="#227199" layoutX="128.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="brand-subtitle" text="Your Brain Can Change">
                            <font>
                               <Font name="Kristen ITC" size="37.0" />
                            </font>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="624.0" prefWidth="1115.0" style="-fx-background-color: #e2dec9;" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.PatientsController">
+   <children>
+      <Pane layoutX="46.0" layoutY="71.0" prefHeight="269.0" prefWidth="975.0" styleClass="dark-card" stylesheets="@stylesheet.css" />
+      <Text fill="#575b51" layoutX="23.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Management">
+         <font>
+            <Font name="Algerian" size="33.0" />
+         </font>
+      </Text>
+      <TextField fx:id="p_id_field" layoutX="230.0" layoutY="100.0" prefHeight="37.0" prefWidth="350.0" style="-fx-border-color: #615841; -fx-border-radius: 5;" stylesheets="@stylesheet.css" />
+      <Text fill="WHITE" layoutX="80.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient ID           :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="80.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Name     :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="p_name_field" layoutX="230.0" layoutY="150.0" prefHeight="30.0" prefWidth="350.0" style="-fx-border-color: #615841; -fx-border-radius: 5;" stylesheets="@stylesheet.css" />
+      <Text fill="WHITE" layoutX="608.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact number  :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="p_contact_field" layoutX="770.0" layoutY="96.0" prefHeight="30.0" prefWidth="200.0" style="-fx-border-color: #615841; -fx-border-radius: 5;" stylesheets="@stylesheet.css" />
+      <ComboBox fx:id="p_gender_box" layoutX="774.0" layoutY="146.0" prefHeight="30.0" prefWidth="192.0" promptText="Select a gender" stylesheets="@stylesheet.css" />
+      <Text fill="WHITE" layoutX="610.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender                :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="p_address_field" layoutX="230.0" layoutY="200.0" prefHeight="63.0" prefWidth="350.0" stylesheets="@stylesheet.css" />
+      <Text fill="WHITE" layoutX="80.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address              :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="patient_table" layoutX="38.0" layoutY="349.0" prefHeight="261.0" prefWidth="1000.0" stylesheets="@stylesheet.css">
+        <columns>
+          <TableColumn fx:id="col_p_id" prefWidth="142.00003051757812" text="ID" />
+          <TableColumn fx:id="col_p_name" prefWidth="181.0" text="Name" />
+            <TableColumn fx:id="col_p_gender" prefWidth="146.0" text="Gender" />
+            <TableColumn fx:id="col_p_contact" prefWidth="210.0" text="Contact" />
+            <TableColumn fx:id="col_p_address" prefWidth="325.0" text="Address" />
+        </columns>
+      </TableView>
+      <ButtonBar layoutX="552.0" layoutY="272.0" prefHeight="39.0" prefWidth="428.0" stylesheets="@stylesheet.css">
+         <buttons>
+            <Button fx:id="p_btn_save" mnemonicParsing="false" onAction="#handelSavePatient" prefHeight="30.0" prefWidth="59.0" styleClass="save-btn" stylesheets="@stylesheet.css" text="Save" />
+            <Button fx:id="p_btn_update" mnemonicParsing="false" onAction="#handelUpdatePatient" prefHeight="30.0" styleClass="update-btn" stylesheets="@stylesheet.css" text="Update" />
+            <Button fx:id="p_btn_delete" mnemonicParsing="false" onAction="#handelDeletePatient" prefHeight="30.0" prefWidth="59.0" styleClass="delete-btn" stylesheets="@stylesheet.css" text="Delete" />
+            <Button mnemonicParsing="false" onAction="#clearFields" prefHeight="30.0" prefWidth="59.0" styleClass="reset-btn" stylesheets="@stylesheet.css" text="Reset" />
+         </buttons>
+      </ButtonBar>
+      <TextField fx:id="p_search_field" layoutX="70.0" layoutY="286.0" prefHeight="30.0" prefWidth="250.0" stylesheets="@stylesheet.css" />
+      <Button layoutX="329.0" layoutY="289.0" mnemonicParsing="false" onAction="#SearchPatientOnAction" prefHeight="33.0" prefWidth="82.0" styleClass="search-btn" stylesheets="@stylesheet.css" text="Search" />
+      <Label fx:id="p_search_text" layoutX="691.0" layoutY="253.0" stylesheets="@stylesheet.css" text="Search Patient by ID or Name" />
+   </children>
+</AnchorPane>

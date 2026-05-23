@@ -5,6 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import lk.ijse.serenity.serenitytherapycenter.App;
+
+import java.io.IOException;
 
 public class LoginControllerForm {
 
@@ -20,7 +23,14 @@ public class LoginControllerForm {
     @FXML
     void btnLoginOnAction(ActionEvent event) {
 
-
+        try {
+            App.stage.close();
+            App.setRoot("dashbord");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

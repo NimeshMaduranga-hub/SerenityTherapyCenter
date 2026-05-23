@@ -45,10 +45,10 @@ public class Therapist {
 
     public void addProgram(Program program){
         this.programs.add(program);
-        program.getTherapist().add(this);
+       // program.getTherapists().add(this);
     }
     public void removeProgram(Program program){
         this.programs.remove(program);
-        program.getTherapist().add(this);
+      //  program.getTherapists().remove(this);
     }
 }

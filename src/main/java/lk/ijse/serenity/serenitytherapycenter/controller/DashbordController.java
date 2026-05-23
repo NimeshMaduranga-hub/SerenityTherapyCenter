@@ -1,50 +1,73 @@
 package lk.ijse.serenity.serenitytherapycenter.controller;
 
-
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.layout.Pane;
+import lk.ijse.serenity.serenitytherapycenter.App;
 
-import java.awt.event.ActionEvent;
+import java.io.IOException;
 
 public class DashbordController {
 
     @FXML
-    void dashboardBtnOnAction(ActionEvent event) {
+    private Pane homePane;
+
+    @FXML
+    public void initialize() {
+        System.out.println("Dashboard initialized ✔");
+        System.out.println(homePane);
+    }
+
+    @FXML
+    public void dashboardBtnOnAction(ActionEvent event) throws Exception {
+        App.setRoot("dashbord");
+    }
+
+    @FXML
+    public void patientsBtnOnAction(ActionEvent event) throws IOException {
+
+        loadView("patients_form");
 
     }
 
     @FXML
-    void logOutBtnOnAction(ActionEvent event) {
-
+    public void therapistsBtnOnAction(ActionEvent event) throws IOException {
+        loadView("therapists_form");
     }
 
     @FXML
-    void patientsBtnOnAction(ActionEvent event) {
-
+    public void programsBtnOnAction(ActionEvent event) throws IOException {
+        loadView("programs_form");
     }
 
     @FXML
-    void paymentBtnOnAction(ActionEvent event) {
-
+    public void sessionsBtnOnAction(ActionEvent event) throws IOException {
+        loadView("sessions_form");
     }
 
     @FXML
-    void programsBtnOnAction(ActionEvent event) {
-
+    public void registrationBtnOnAction(ActionEvent event) throws IOException {
+        loadView("registration_form");
     }
 
     @FXML
-    void registrationBtnOnAction(ActionEvent event) {
-
+    public void paymentBtnOnAction(ActionEvent event) throws IOException {
+        loadView("payment_form");
     }
 
     @FXML
-    void sessionsBtnOnAction(ActionEvent event) {
-
+    public void logOutBtnOnAction(ActionEvent event) throws Exception {
+        App.setRoot("login_form");
     }
 
-    @FXML
-    void therapistsBtnOnAction(ActionEvent event) {
+    private void loadView(String fxml) throws IOException {
 
+        Parent view = FXMLLoader.load(
+                App.class.getResource("/lk/ijse/serenity/serenitytherapycenter/view/" + fxml + ".fxml")
+        );
+
+        homePane.getChildren().setAll(view);
     }
-
 }

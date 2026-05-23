@@ -1,5 +1,5 @@
 package lk.ijse.serenity.serenitytherapycenter.config;
-import lk.ijse.serenity.serenitytherapycenter.entity.User;
+import lk.ijse.serenity.serenitytherapycenter.entity.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
