@@ -2,7 +2,7 @@ package lk.ijse.serenity.serenitytherapycenter.dto;
 
 import lombok.*;
 
-import java.util.Set;
+import java.util.HashSet;
 
 @Getter
 @Setter
@@ -10,11 +10,10 @@ import java.util.Set;
 @AllArgsConstructor
 @ToString
 @Builder
-public class PatientDTO {
+public class TherapistDTO {
     private String id;
     private String name;
-    private String gender;
     private String contact;
-    private String address;
-    private Set<RegistrationDTO> registrations;
+    private String email;
+    private HashSet<ProgramDTO> programs;
 }

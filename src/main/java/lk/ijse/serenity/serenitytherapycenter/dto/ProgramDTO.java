@@ -2,6 +2,7 @@ package lk.ijse.serenity.serenitytherapycenter.dto;
 
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.util.Set;
 
 @Getter
@@ -10,11 +11,10 @@ import java.util.Set;
 @AllArgsConstructor
 @ToString
 @Builder
-public class PatientDTO {
+public class ProgramDTO {
     private String id;
     private String name;
-    private String gender;
-    private String contact;
-    private String address;
-    private Set<RegistrationDTO> registrations;
+    private String duration;
+    private BigDecimal fee;
+    private Set<TherapistDTO> therapists;
 }
