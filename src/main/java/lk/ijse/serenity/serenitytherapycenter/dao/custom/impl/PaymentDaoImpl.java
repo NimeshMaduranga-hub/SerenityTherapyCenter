@@ -2,6 +2,7 @@ package lk.ijse.serenity.serenitytherapycenter.dao.custom.impl;
 
 
 import lk.ijse.serenity.serenitytherapycenter.config.FactoryConfiguration;
+import lk.ijse.serenity.serenitytherapycenter.dao.custom.PaymentDao;
 import lk.ijse.serenity.serenitytherapycenter.entity.Payment;
 import lk.ijse.serenity.serenitytherapycenter.entity.PaymentDetail;
 import org.hibernate.Session;
