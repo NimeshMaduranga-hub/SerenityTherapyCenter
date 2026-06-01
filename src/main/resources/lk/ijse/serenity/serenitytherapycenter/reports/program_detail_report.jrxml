@@ -1,0 +1,57 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="program_detail_report" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0b99d9a6-f98e-44bd-afe1-3109c2ea4ab2">
+	<query language="sql"><![CDATA[]]></query>
+	<field name="prID" class="java.lang.String"/>
+	<field name="prName" class="java.lang.String"/>
+	<field name="trName" class="java.lang.String"/>
+	<field name="trID" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="64" splitType="Stretch">
+		<element kind="staticText" uuid="834211d2-b64c-4b90-86e6-293a569a9ee1" x="106" y="0" width="342" height="40" fontName="Arial Narrow" fontSize="30.0" bold="true">
+			<text><![CDATA[Sernity Mental Health Center]]></text>
+		</element>
+	</title>
+	<pageHeader height="46" splitType="Stretch">
+		<element kind="staticText" uuid="4c72e860-5b54-4c1e-894c-7dd441014efb" x="187" y="0" width="180" height="30" fontSize="19.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Program Details]]></text>
+			<box>
+				<pen lineWidth="0.0"/>
+				<bottomPen lineWidth="0.0"/>
+			</box>
+		</element>
+	</pageHeader>
+	<columnHeader height="55" splitType="Stretch">
+		<element kind="staticText" uuid="caa5e7d0-01fb-4ef7-8e08-e54a563f6892" x="12" y="21" width="90" height="30" fontSize="12.0" bold="false" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Program ID]]></text>
+		</element>
+		<element kind="staticText" uuid="589669c4-c988-40e2-8640-88b825aa5370" x="102" y="21" width="170" height="30" fontSize="12.0" bold="false" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Program Name]]></text>
+		</element>
+		<element kind="staticText" uuid="667b049a-80ba-4f7d-905d-5fb4ff357ab0" x="272" y="21" width="100" height="30" fontSize="12.0" bold="false" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Therapist ID]]></text>
+		</element>
+		<element kind="staticText" uuid="24b9049e-6d41-4611-bc33-46f4dbee2cbc" x="372" y="21" width="174" height="30" fontSize="12.0" bold="false" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Therapist Name]]></text>
+		</element>
+		<element kind="line" uuid="a5b13a28-ac2e-4588-86eb-6c2e86de34c0" x="12" y="52" width="534" height="1"/>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<element kind="textField" uuid="3a9cb515-138f-4adf-8fd9-9ba39f286783" x="12" y="2" width="90" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{prID}]]></expression>
+			</element>
+			<element kind="textField" uuid="269dd96f-19cd-4c8f-a258-6efc6f9d0dec" x="102" y="2" width="170" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{prName}]]></expression>
+			</element>
+			<element kind="textField" uuid="ed44a11b-9de6-4b49-b9c9-c8a8b49e286b" x="372" y="2" width="172" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{trName}]]></expression>
+			</element>
+			<element kind="textField" uuid="c2fa2dc9-039f-4b3d-8c9c-956b8cbe7bef" x="272" y="2" width="100" height="30" vTextAlign="Middle">
+				<expression><![CDATA[$F{trID}]]></expression>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
