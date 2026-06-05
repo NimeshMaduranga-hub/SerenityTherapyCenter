@@ -57,10 +57,16 @@ public class DashbordController {
         loadView("payment_form");
     }
 
+    public void userBtnOnAction(ActionEvent event) throws IOException {
+        loadView("user_form");
+    }
+
     @FXML
     public void logOutBtnOnAction(ActionEvent event) throws Exception {
         App.setRoot("login_form");
     }
+
+
 
     private void loadView(String fxml) throws IOException {
 
@@ -70,4 +76,6 @@ public class DashbordController {
 
         homePane.getChildren().setAll(view);
     }
+
+
 }

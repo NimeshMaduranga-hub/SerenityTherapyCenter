@@ -88,9 +88,18 @@ public class PatientDaoImpl implements PatientDao {
 
     @Override
     public List<Patient> getAll() {
-        Session session = FactoryConfiguration.getInstance().getSession();
-        List<Patient> patients = session.createQuery("from Patient ", Patient.class).list();
+
+        Session session =
+                FactoryConfiguration.getInstance().getSession();
+
+        List<Patient> patients =
+                session.createQuery("FROM Patient", Patient.class)
+                        .getResultList();
+
+        System.out.println(patients.size());
+
         session.close();
+
         return patients;
     }
 

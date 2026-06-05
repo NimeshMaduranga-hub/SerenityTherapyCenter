@@ -4,6 +4,7 @@
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
@@ -101,13 +102,29 @@
       <TextField fx:id="pr_search_field" layoutX="691.0" layoutY="29.0" prefHeight="30.0" prefWidth="190.0" styleClass="search-field" stylesheets="@stylesheet.css" />
       <Button layoutX="888.0" layoutY="31.0" mnemonicParsing="false" onAction="#handelSearchProgram" prefHeight="22.0" prefWidth="75.0" styleClass="search-btn" stylesheets="@stylesheet.css" text="Search" />
       <Button layoutX="969.0" layoutY="31.0" mnemonicParsing="false" onAction="#viewProgramDetailTable" styleClass="view-btn" stylesheets="@stylesheet.css" text="View Details" />
-      <TableView layoutX="52.0" layoutY="466.0" prefHeight="133.0" prefWidth="1034.0" stylesheets="@stylesheet.css">
-        <columns>
-          <TableColumn fx:id="col_pr_id_2" prefWidth="187.0" text="Program ID" />
-          <TableColumn fx:id="col_pr_name_2" prefWidth="378.0" text="Program" />
-            <TableColumn fx:id="col_t_id" prefWidth="229.0" text="Therapist ID" />
-            <TableColumn fx:id="col_t_name" prefWidth="238.0" text="Therapist" />
-        </columns>
-      </TableView>
+      <ScrollPane layoutX="21.0" layoutY="477.0" prefHeight="324.0" prefWidth="1084.0">
+         <content>
+            <AnchorPane prefHeight="442.0" prefWidth="1072.0">
+               <children>
+                  <TableView fx:id="program_therapist_table" layoutX="28.0" layoutY="19.0" prefHeight="148.0" prefWidth="1034.0" stylesheets="@stylesheet.css">
+                    <columns>
+                      <TableColumn fx:id="col_pr_id_2" prefWidth="187.0" text="Program ID" />
+                      <TableColumn fx:id="col_pr_name_2" prefWidth="378.0" text="Program" />
+                        <TableColumn fx:id="col_t_id" prefWidth="229.0" text="Therapist ID" />
+                        <TableColumn fx:id="col_t_name" prefWidth="238.0" text="Therapist" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="program_table" layoutX="30.0" layoutY="172.0" onMouseClicked="#getProgramTableData" prefHeight="106.0" prefWidth="1032.0" stylesheets="@stylesheet.css">
+                    <columns>
+                      <TableColumn fx:id="col_pr_id" prefWidth="150.0" text="ID" />
+                      <TableColumn fx:id="col_pr_name" minWidth="0.0" prefWidth="328.0" text="Name" />
+                        <TableColumn fx:id="col_pr_duration" prefWidth="389.0" text="Duration (weeks)" />
+                        <TableColumn fx:id="col_pr_fee" prefWidth="155.0" text="Fee" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
    </children>
 </AnchorPane>

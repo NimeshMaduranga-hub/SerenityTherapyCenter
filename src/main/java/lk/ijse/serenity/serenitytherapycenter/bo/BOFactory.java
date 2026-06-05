@@ -1,5 +1,7 @@
 package lk.ijse.serenity.serenitytherapycenter.bo;
 
+import lk.ijse.serenity.serenitytherapycenter.bo.impl.*;
+
 public class BOFactory {
 
     private static BOFactory boFactory;

@@ -4,34 +4,29 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table
-
+@Table(name = "registration")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @Builder
-
 public class Registration {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "patient_id",nullable = false)
-    private  Patient patient;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "patient_id", nullable = false)
+    private Patient patient;
 
-    @Column(name = "register_date")
+    @Column(nullable = false)
     private String registerDate;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "session_id",nullable = false)
-    private Sessions sessions;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "session_id", nullable = false)
+    private Sessions session;
 
-    @OneToMany(mappedBy = "registration",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+    @OneToOne(mappedBy = "registration", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Payment payment;
-
-
-
 }

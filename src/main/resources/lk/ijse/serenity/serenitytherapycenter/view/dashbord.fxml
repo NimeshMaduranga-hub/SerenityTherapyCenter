@@ -16,7 +16,7 @@
    <children>
       <Pane fx:id="homePane" layoutX="252.0" layoutY="64.0" prefHeight="618.0" prefWidth="929.0">
          <children>
-            <HBox alignment="CENTER" layoutX="9.0" layoutY="196.0" prefHeight="250.0" prefWidth="911.0">
+            <HBox alignment="CENTER" layoutX="9.0" layoutY="46.0" prefHeight="250.0" prefWidth="911.0">
                <children>
                   <Pane prefHeight="200.0" prefWidth="250.0" styleClass="dark-card" stylesheets="@stylesheet.css">
                      <children>
@@ -79,6 +79,25 @@
                   </Pane>
                </children>
             </HBox>
+            <Pane layoutX="341.0" layoutY="337.0" prefHeight="250.0" prefWidth="250.0" styleClass="dark-card" stylesheets="@stylesheet.css">
+               <children>
+                  <Text fill="WHITE" layoutX="40.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programms">
+                     <font>
+                        <Font name="Algerian" size="30.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="50.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="149.99999999999994">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="100.0" layoutY="10.0">
+                     <image>
+                        <Image url="@../assets/program.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
          </children>
       </Pane>
       <VBox alignment="CENTER" layoutX="-4.0" layoutY="-6.0" prefHeight="705.0" prefWidth="256.0" spacing="10" style="-fx-background-color: #9a9778;">
@@ -133,6 +152,11 @@
                </font>
             </Button>
             <Button mnemonicParsing="false" onAction="#paymentBtnOnAction" prefWidth="200.0" styleClass="sidebar-btn" stylesheets="@stylesheet.css" text="Payment">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#userBtnOnAction" prefWidth="200.0" styleClass="sidebar-btn" stylesheets="@stylesheet.css" text="User Setting">
                <font>
                   <Font size="26.0" />
                </font>

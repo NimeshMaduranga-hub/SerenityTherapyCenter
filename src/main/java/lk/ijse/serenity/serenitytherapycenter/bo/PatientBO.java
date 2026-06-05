@@ -4,7 +4,7 @@ import lk.ijse.serenity.serenitytherapycenter.dto.PatientDTO;
 
 import java.util.List;
 
-public interface PatientBO {
+public interface PatientBO extends SuperBO{
     boolean savePatient(PatientDTO p);
     boolean updatePatient(PatientDTO p);
     boolean deletePatient(int id);

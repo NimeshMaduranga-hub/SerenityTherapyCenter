@@ -17,7 +17,7 @@
         </property>
 
         <property name="hibernate.connection.url">
-            jdbc:mysql://localhost:3306/stc_db
+            jdbc:mysql://localhost:3306/serenity_health_center_db
         </property>
 
         <property name="hibernate.connection.username">

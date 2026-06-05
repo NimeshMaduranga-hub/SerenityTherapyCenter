@@ -1,29 +1,27 @@
 package lk.ijse.serenity.serenitytherapycenter.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Table(name = "users")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
-    private Long id;
+    @Column(nullable = false)
+    private String name;
 
-    private String username;
+    @Column(nullable = false)
+    private String position;
 
+    @Column(nullable = false)
     private String password;
-
-    private String role;
-
-    public User() {
-    }
-
-    public User(String username, String password, String role) {
-        this.username = username;
-        this.password = password;
-        this.role = role;
-    }
-
 }

@@ -114,9 +114,46 @@
 }
 
 
+.setting-btn {
+    -fx-background-color: linear-gradient(to bottom, #3b82f6, #2563eb);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 14;
+    -fx-border-radius: 14;
+
+    -fx-padding: 10 20 10 20;
+
+    -fx-cursor: hand;
+
+    -fx-effect: dropshadow(gaussian, rgba(37,99,235,0.35), 10, 0.3, 0, 3);
+}
+
+/* Hover Effect */
+.setting-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #60a5fa, #3b82f6);
+
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+
+    -fx-effect: dropshadow(gaussian, rgba(59,130,246,0.5), 14, 0.4, 0, 4);
+}
+
+/* Press Effect */
+.setting-btn:pressed {
+    -fx-background-color: linear-gradient(to bottom, #1d4ed8, #1e40af);
+
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0.2, 0, 2);
+}
 /* =========================
    SAVE BUTTON (GREEN)
 ========================= */
+
+
 
 .save-btn {
     -fx-background-color: #34c759;

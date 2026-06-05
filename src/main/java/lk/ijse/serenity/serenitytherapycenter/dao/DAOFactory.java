@@ -1,6 +1,6 @@
 package lk.ijse.serenity.serenitytherapycenter.dao;
 
-import lk.ijse.serenity.serenitytherapycenter.dao.custom.impl.PatientDaoImpl;
+import lk.ijse.serenity.serenitytherapycenter.dao.custom.impl.*;
 
 public class DAOFactory {
 

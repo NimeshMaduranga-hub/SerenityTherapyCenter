@@ -5,7 +5,7 @@ import lk.ijse.serenity.serenitytherapycenter.dto.PaymentDetailDTO;
 
 import java.util.List;
 
-public interface PaymentBO {
+public interface PaymentBO extends SuperBO{
     String getNextID();
     List<String> getAllPaymentID();
     PaymentDTO getPaymentDataByID(int id);

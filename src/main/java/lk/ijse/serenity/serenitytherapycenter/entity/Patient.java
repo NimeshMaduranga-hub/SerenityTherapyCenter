@@ -8,31 +8,28 @@ import java.util.Set;
 
 @Entity
 @Table(name = "patient")
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @Builder
 
 public class Patient {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "name",nullable = false)
+    @Column(nullable = false)
     private String name;
 
-    @Column(name = "gender")
     private String gender;
 
-    @Column(name = "contact",nullable = false)
+    @Column(nullable = false)
     private String contact;
 
-    @Column(name = "address")
     private String address;
 
-    @OneToMany(mappedBy = "patient",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
-    private Set<Registration> registrations=new HashSet<>();
+    @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Set<Registration> registrations = new HashSet<>();
 }

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="624.0" prefWidth="1115.0" style="-fx-background-color: #e2dec9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.serenity.serenitytherapycenter.controller.UserController">
+   <children>
+      <Text layoutX="23.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Management">
+         <font>
+            <Font name="Algerian" size="33.0" />
+         </font>
+      </Text>
+      <Pane layoutX="36.0" layoutY="78.0" prefHeight="369.0" prefWidth="713.0" styleClass="dark-card" stylesheets="@stylesheet.css">
+         <children>
+            <TextField layoutX="144.0" layoutY="81.0" />
+            <TextField layoutX="143.0" layoutY="137.0" />
+            <ComboBox layoutX="144.0" layoutY="193.0" prefHeight="44.0" prefWidth="183.0" />
+            <Text fill="WHITE" layoutX="30.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID           :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="30.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name     :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="30.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position          :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <PasswordField layoutX="470.0" layoutY="81.0" prefHeight="37.0" prefWidth="213.0" />
+            <Text fill="WHITE" layoutX="372.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password     :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="480.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Must contain 8 or mor characters" />
+            <CheckBox layoutX="480.0" layoutY="147.0" mnemonicParsing="false" text="Change Password" textFill="WHITE" />
+            <Label layoutX="480.0" layoutY="175.0" text="New Password" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="480.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password Confermation">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <PasswordField layoutX="470.0" layoutY="202.0" prefHeight="37.0" prefWidth="213.0" />
+            <PasswordField layoutX="470.0" layoutY="273.0" prefHeight="37.0" prefWidth="213.0" />
+            <ButtonBar layoutX="423.0" layoutY="317.0" prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                  <Button mnemonicParsing="false" styleClass="save-btn" text="Save" />
+                  <Button mnemonicParsing="false" styleClass="update-btn" stylesheets="@stylesheet.css" text="Update" />
+                <Button mnemonicParsing="false" styleClass="reset-btn" text="Reset" />
+              </buttons>
+            </ButtonBar>
+            <Line endX="100.0" layoutX="251.0" layoutY="246.0" startX="100.0" startY="-165.0" stroke="WHITE" />
+         </children>
+      </Pane>
+      <TableView layoutX="40.0" layoutY="454.0" prefHeight="158.0" prefWidth="713.0" stylesheets="@stylesheet.css">
+        <columns>
+          <TableColumn prefWidth="247.0" text="User ID" />
+          <TableColumn prefWidth="237.0" text="User Name" />
+            <TableColumn prefWidth="224.0" text="Position" />
+        </columns>
+      </TableView>
+      <Pane layoutX="772.0" layoutY="79.0" prefHeight="528.0" prefWidth="285.0" styleClass="dark-card" stylesheets="@stylesheet.css">
+         <children>
+            <ImageView fitHeight="176.0" fitWidth="200.0" layoutX="38.0" layoutY="157.0">
+               <image>
+                  <Image url="@../assets/a2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

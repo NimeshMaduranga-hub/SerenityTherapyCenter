@@ -1,6 +1,7 @@
 package lk.ijse.serenity.serenitytherapycenter.dao.custom.impl;
 
 import lk.ijse.serenity.serenitytherapycenter.config.FactoryConfiguration;
+import lk.ijse.serenity.serenitytherapycenter.dao.custom.SessionDao;
 import lk.ijse.serenity.serenitytherapycenter.entity.Sessions;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -8,7 +9,7 @@ import org.hibernate.Transaction;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SessionDaoImpl {
+public class SessionDaoImpl  implements SessionDao {
     @Override
     public boolean save(Sessions s) {
         Session session = FactoryConfiguration.getInstance().getSession();

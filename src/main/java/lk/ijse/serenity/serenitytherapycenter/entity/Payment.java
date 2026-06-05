@@ -9,33 +9,29 @@ import java.util.List;
 
 @Entity
 @Table(name = "payment")
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
 @Builder
-
 public class Payment {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "registration_id",nullable = false)
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "registration_id", nullable = false)
     private Registration registration;
 
-    @Column(name = "total",nullable = false,precision = 10,scale = 2)
+    @Column(precision = 10, scale = 2)
     private BigDecimal total;
 
-    @Column(name = "due_amount",nullable = false,precision = 10,scale = 2)
+    @Column(precision = 10, scale = 2)
     private BigDecimal dueAmount;
 
-    @Column(name = "status")
     private String status;
 
-    @OneToMany(mappedBy = "payment",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    private List<PaymentDetail> paymentDetails=new ArrayList<>();
-
+    @OneToMany(mappedBy = "payment", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<PaymentDetail> paymentDetails = new ArrayList<>();
 }
